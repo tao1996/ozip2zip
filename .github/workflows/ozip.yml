@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: ./out/boot.img
+        path: ./boot.img
 
