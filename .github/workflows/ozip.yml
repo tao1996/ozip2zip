@@ -15,7 +15,7 @@ jobs:
       run: |
         sudo apt install python3-pip wget
         wget https://bootstrap.pypa.io/ez_setup.py
-        python3 ez_setup.py
+        sudo python3 ez_setup.py
         pip3 install pycryptodome
         pip3 install docopt
         wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip &> /dev/null
