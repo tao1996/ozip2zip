@@ -15,7 +15,8 @@ jobs:
       run: |
         sudo apt install python3-pip wget
         pip3 install pycryptodome
-        wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip
+        pip3 install docopt
+        wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip &> /dev/null
         ./ozipdecrypt.py *.ozip
     - name: Store generated APK file
       uses: actions/upload-artifact@v1
