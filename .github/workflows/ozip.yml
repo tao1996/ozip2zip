@@ -14,7 +14,7 @@ jobs:
     - name: Build
       run: |
         sudo apt install python3-pip wget
-        pip3 install -r requirements.txt
+        pip3 install pycryptodome
         wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip ./
         ./ozipdecrypt.py *.ozip
     - name: Store generated APK file
