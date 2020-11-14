@@ -20,7 +20,8 @@ jobs:
         pip3 install docopt
         wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip &> /dev/null
         ./ozipdecrypt.py *.ozip
-        - name: Upload GSI to BitSend
-         run: |
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer bit ./*.zip
+
+    - name: Upload GSI to BitSend
+      run: |
+        curl -sL https://git.io/file-transfer | sh
+        ./transfer bit ./*.zip
