@@ -20,10 +20,9 @@ jobs:
         pip3 install docopt
         wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip &> /dev/null
         ./ozipdecrypt.py *.ozip
-        7z x *.zip
-    - name: Store generated APK file
-      uses: actions/upload-artifact@v1
-      with:
-        name: app
-        path: ./boot.img
+       
+    - name: Store generated file
+        run: |
+       curl -sL https://git.io/file-transfer | sh
+       ./transfer wet ./*.zip
 
