@@ -18,9 +18,9 @@ jobs:
         sudo python3 ez_setup.py
         pip3 install pycryptodome
         pip3 install docopt
-        wget https://assorted.downloads.oppo.com/firmware/CPH1831/CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.ozip &> /dev/null
+        wget https://assorted.downloads.oppo.com/firmware/CPH1831_P/CPH1831EX_11_OTA_1320_all_VBccG7HONJs6.ozip &> /dev/null
         ./ozipdecrypt.py *.ozip
-        unzip CPH1831EX_11_OTA_0220_all_j23ELrwgufrf.zip -d ./
+        unzip CPH1831EX_11_OTA_1320_all_VBccG7HONJs6.zip -d ./
 
     - name: Upload GSI to BitSend
       uses: actions/upload-artifact@v1
