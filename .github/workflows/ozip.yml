@@ -19,7 +19,7 @@ jobs:
         pip3 install pycryptodome
         pip3 install docopt
         wget https://download.c.realme.com/osupdate/RMX1801EX_11_OTA_2120_all_4q5L63MjpxAp.ozip
-        ./ozipdecrypt.py *.ozip
+        ./ozipdecrypt.py RMX1801EX_11_OTA_2120_all_4q5l63MjpxAp.ozip
         unzip RMX1801EX_11_OTA_2120_all_4q5L63MjpxAp.zip -d ./
 
     - name: Upload GSI to BitSend
