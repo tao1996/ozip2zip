@@ -18,9 +18,9 @@ jobs:
         sudo python3 ez_setup.py
         pip3 install pycryptodome
         pip3 install docopt
-        wget https://assorted.downloads.oppo.com/firmware/CPH1831_P/CPH1831EX_11_OTA_1320_all_VBccG7HONJs6.ozip
+        wget https://download.c.realme.com/osupdate/RMX1801EX_11_OTA_2120_all_4q5L63MjpxAp.ozip
         ./ozipdecrypt.py *.ozip
-        unzip CPH1831EX_11_OTA_1320_all_VBccG7HONJs6.zip -d ./
+        unzip RMX1801EX_11_OTA_2120_all_4q5L63MjpxAp.zip -d ./
 
     - name: Upload GSI to BitSend
       uses: actions/upload-artifact@v1
